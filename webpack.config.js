@@ -32,6 +32,10 @@ module.exports = {
             template: path.join(__dirname, './src/history.html'),
             minify: false,
         }),
-        new CopyWebpackPlugin([{ from: 'src/manifest.json'}])
+        new CopyWebpackPlugin([
+            {from: 'src/manifest.json'},
+            {from: 'src/icon.png'},
+            {from: 'src/background.js'},
+        ]),
     ],
 };
