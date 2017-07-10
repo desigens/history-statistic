@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "version": "1.0.0",
+    "minimum_chrome_version": "17",
+    "name": "History statistics",
+    "permissions": [
+        "history"
+    ],
+    "chrome_url_overrides": {
+        "history": "history.html"
+    }
+}
